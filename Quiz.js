@@ -47,13 +47,14 @@ function startQuiz6U() {
 
 function currentQuestionTracker(){
     questionCount++;
-    return renderQuestionPage(questionCount);
+   
 }
 
 function findUserInput() {
     $('#question-box').on('click', '.answer-choice', (event) =>{
         event.stopPropagation();
-        return currentQuestionTracker();
+         currentQuestionTracker();
+         renderQuestionPage();
         })
     }
 
@@ -93,11 +94,11 @@ function renderQuestionPage() {
             </p>
         </div>-->`);
        
-       return findUserInput(questions6U);
+       findUserInput(questions6U);
 }
 
 function quizAppHandler(){
-    return startQuiz6U();
+    startQuiz6U();
 }
 
 $(quizAppHandler)
