@@ -1,3 +1,204 @@
+* {
+    box-sizing: content-box;
+    background-color: black;
+    color: white;
+    font-family: 'Fredoka One', cursive;
+}
+
 .hidden {
     display: none;
+}
+
+h1 {
+    font-size: 25px;
+    width: 275px;
+    background-color: purple;
+    border-radius: 15px;
+    font-family: 'Fredoka One', cursive;
+    margin-top: .5px;
+    margin-bottom: 4px;
+}
+
+#logo {
+    background-color: rebeccapurple;
+    border-radius: 15px;
+    width: 263px;
+    height: 240px; 
+    margin-top: 5px; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: yellow;
+    text-align: center;
+    width: 275px;
+    margin: auto;
+    margin-top: -1px;
+    padding: 1px;
+    border-radius: 15px;
+    height: 32px;    
+}
+
+button {
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: lighter;
+}
+
+#age-form > h1 {
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 280px;
+    padding-left: 8px;  
+    font-weight: lighter;
+}
+
+.js-answer-choice {
+    height: 50px;
+    width: 100px;
+    font-weight: lighter;
+}
+
+.js-answer-choice-6 {
+    height: 50px;
+    width: 100px;
+    font-weight: lighter;
+}
+
+#incorrect-response-button {
+    height: 50px;
+    width: 200px;
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+#correct-response-button {
+    height: 75px;
+    width: 75px;
+    margin-top: 400px;
+    margin-left: 150px;
+    background-color: lime;
+    font-weight: bolder;
+    color: purple;
+}
+
+#correct-response-button-6 {
+    height: 75px;
+    width: 75px;
+    background-color: lime;
+    font-weight: bolder;
+    color: purple;
+}
+
+#js-stats-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#question-number-container {
+    color: red;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#number-correct-container > p {
+    color: cornflowerblue;
+    width: 200px;
+}
+
+#question-number-container-6 {
+    color: red;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#number-correct-container-6 > p {
+    color: cornflowerblue;
+    width: 200px;
+}
+
+.js-answer-choice-6 {
+    font-size: larger;
+}
+
+#js-question-6 {
+    font-size: 35px;
+    margin: 25px;
+}
+
+.click-sign {
+    margin-left: 15px;
+    font-size: larger;
+}
+
+@media screen and (min-width: 900px) {
+header {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: 5px;
+    background-color: black;
+    height: 200px;
+}
+#logo {
+    margin: 10px;
+    width: 250px;
+}
+
+header > h1 {
+    border: 2px solid yellow;
+    flex-grow: 1;
+}
+
+#age-form > h1 {
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 20px;
+    padding-left: 8px;  
+    font-weight: lighter;
+}
+
+#question-box {
+    display: flex;
+    flex-direction: row;
+}
+.response-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#js-answer-choice-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px
+}
+
+.js-answer-choice-6, .js-answer-choice {
+    height: 60px;
+    width: 80px;
+    font-weight: lighter;
+    margin-top: 70px;
+    margin-right: 4px;
+}
+
+#js-answer-choice-container > .js-answer-choice {
+    height: 60px;
+    width: 80px;
+    font-weight: lighter;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
+#js-stats-container-6, #js-stats-container {
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    margin-left: 25px;
+}
+
+#correct-response-button {
+    margin-top: 200px;
+}
 }
