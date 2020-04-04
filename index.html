@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Addition Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>
+            Addition Quiz!
+        </h1>
+        <img id='logo' src='Mathemagical-logo.svg' alt='Mathemagical-logo'>
+    </header>
+  
+        <form id='age-form'>
+            <h1>Please select your age to begin.</h1>
+            <button id='U6-selected'><label>
+                Under 6
+            </label></button>
+            <button id='selected-6'><label>
+                6 or older
+            </label></button>
+        </form>
+    
+        <form id='base-form'>
+            <h2 class='js-question-stem hidden'>
+                How many of what?
+                </h2>
+        <div id='question-box'>
+            
+        </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src='Quiz.js'></script>
+    </body>
+</html>
+
+<!--
+
+Questions for users 6 and older:<br><br>
+What is 3 + 8?<br>
+What is 3 + 4?<br>
+What is 9 + 4?<br>
+What is 13 + 6?<br>
+What is 3 + 14?<br>
+-->
