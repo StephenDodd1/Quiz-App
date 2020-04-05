@@ -153,14 +153,20 @@ function continueAfterQuestion() {
     $('#question-box').on('click', '#correct-response-button, #incorrect-response-button', (e) => {
         $('#correct-response-button, #incorrect-response-button').remove();
         $('.js-question-stem').toggleClass('hidden');
-        renderOrFinishPage();
+        removeQuestionStem();
     }); 
 }
-
+function removeQuestionStem() {
+    if (questionCount === 5) {
+        $('.js-question-stem').toggleClass('hidden');
+    }
+    renderOrFinishPage();
+}
 function renderOrFinishPage() {
     if (questionCount === 5) {
-        $('#question-box').html(`<div id='question-number-container'>
-                </p>
+        $('#question-box').html(`
+        <div id='question-number-container'>
+                <p>
                 |██${' ██'.repeat(questionCount-1)} | ${questionCount}/5
                 </p> 
             </div>
@@ -170,6 +176,7 @@ function renderOrFinishPage() {
                 |${'██ '.repeat(numCorrect)}|  ${numCorrect}/5
                 </p>
             </div>
+            <h3>You got ${numCorrect} right!</h3>
             <form id='js-retake-or-finish'>
             <button id='js-retake'>Retake!
             </button>
@@ -218,7 +225,7 @@ function renderQuestionPage() {
     </div>
 <div id='js-stats-container'>
     <div id='question-number-container'>
-            </p>
+            <p>
             Question #:<br>
             | ██${' ██'.repeat(questionCount)} | ${questionCount+1}/5
             </p> 
@@ -257,7 +264,7 @@ function renderQuestionPage() {
         </button>
     <div id='js-stats-container-6'>
         <div id='question-number-container-6'>
-                </p>
+                <p>
                 Question #:<br>
                 | ██${' ██'.repeat(questionCount)} | ${questionCount+1}/5
                 </p> 
@@ -330,8 +337,9 @@ function findUserInput6() {
   
   function renderOrFinishPage6() {
       if (questionCount === 5) {
-          $('#question-box').html(`<div id='question-number-container'>
-                  </p>
+          $('#question-box').html(`
+            <div id='question-number-container'>
+                  <p>
                   |██${' ██'.repeat(questionCount-1)} | ${questionCount}/5
                   </p> 
               </div>

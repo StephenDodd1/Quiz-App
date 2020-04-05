@@ -97,7 +97,7 @@ button {
     flex-direction: row;
 }
 
-#question-number-container {
+#question-number-container > p {
     color: red;
     width: 200px;
     margin-right: 10px;
@@ -200,5 +200,9 @@ header > h1 {
 
 #correct-response-button {
     margin-top: 200px;
+}
+
+#question-box > h3 {
+    margin-right: 15px;
 }
 }
