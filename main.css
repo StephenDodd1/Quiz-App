@@ -92,7 +92,7 @@ button {
     color: purple;
 }
 
-#js-stats-container {
+#js-stats-container, #js-stats-container-6 {
     display: flex;
     flex-direction: row;
 }
@@ -108,7 +108,7 @@ button {
     width: 200px;
 }
 
-#question-number-container-6 {
+#question-number-container-6 > p {
     color: red;
     width: 200px;
     margin-right: 10px;

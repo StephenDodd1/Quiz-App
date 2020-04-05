@@ -285,7 +285,7 @@ function renderQuestionPage() {
 function startQuiz6() {
     $('#age-form').on('click', '#selected-6', (event) => {
       event.preventDefault();
-      under6 = false
+      under6 = false;
       $('#age-form').addClass('hidden');
       $('#logo').addClass('hidden');
       renderQuestionPage();
@@ -365,7 +365,7 @@ function findUserInput6() {
           questionCount = 0;  
           $('#age-form').addClass('hidden');
           $('#logo').addClass('hidden');
-          renderQuestionPage6();
+          renderQuestionPage();
       })
   }
 
